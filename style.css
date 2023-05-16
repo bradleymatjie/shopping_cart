@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 15px;
+  background-color: #252525;
+  color: #f5f5f5;
+}
+
+header > div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 20%;
+}
+
+.cart {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiKONRhX7SjSxc7Nrc6ZKPfMsHDCwZsPo7zw&usqp=CAU");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  position: relative;
+}
+
+.cart span {
+  position: absolute;
+  left: 70%;
+  top: 0;
+  border: 1px solid #252525;
+  padding: 3px 5px;
+  background-color: #252525;
+  color: #f5f5f5;
+  border-radius: 60%;
+}
+
+header > ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 20%;
+  list-style: none;
+}
+
+body > section {
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  left: 30%;
+  top: 15%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: 20px;
+  background-color: #252525;
+  color: whitesmoke;
+  box-shadow: 1px 1px 5px 1px #252525;
+}
+
+form input {
+  width: 50%;
+  height: 30px;
+  border: none;
+  border-bottom: 1px dotted whitesmoke;
+  background: transparent;
+  color: #f5f5f5;
+}
+
+
+form input::placeholder {
+  color: whitesmoke;
+}
+
+#signUp {
+  width: 65%;
+  height: 35px;
+  background-color: aqua;
+  border: none;
+}
+
+
+#welcome {
+  height: 100vh;
+  align-items: flex-start;
+  padding-left: 50px;
+  background-image: url('https://www.kotak.com/content/dam/Kotak/herosliderbanner/how-credit-cards-enhance-your-shopping-experience.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+
+#welcome {
+  font-size: 28px;
+}
+
+#welcome h1,
+#welcome p {
+  margin: 3px;
+}
+
+#welcome button {
+  width: 150px;
+  height: 40px;
+  margin-top: 20px;
+}
