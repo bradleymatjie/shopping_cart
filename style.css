@@ -9,7 +9,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 70px;
   padding: 0 15px;
   background-color: #252525;
   color: #f5f5f5;
@@ -86,7 +86,6 @@ form input {
   color: #f5f5f5;
 }
 
-
 form input::placeholder {
   color: whitesmoke;
 }
@@ -98,12 +97,12 @@ form input::placeholder {
   border: none;
 }
 
-
+/* Hero Section background image */
 #welcome {
   height: 100vh;
   align-items: flex-start;
   padding-left: 50px;
-  background-image: url('https://www.kotak.com/content/dam/Kotak/herosliderbanner/how-credit-cards-enhance-your-shopping-experience.jpg');
+  background-image: url("./images/COCKTAIL.jpeg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
@@ -111,6 +110,7 @@ form input::placeholder {
 
 #welcome {
   font-size: 28px;
+  color: #f5f5f5;
 }
 
 #welcome h1,
@@ -122,4 +122,13 @@ form input::placeholder {
   width: 150px;
   height: 40px;
   margin-top: 20px;
+  font-size: 1rem;
+  border-radius: 1rem;
+}
+button:hover {
+  cursor: grab;
+  background-color: ;
+}
+barName {
+  font-size: 1rem;
 }
