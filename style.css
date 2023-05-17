@@ -1,134 +1,226 @@
-body {
-  margin: 0;
-  padding: 0;
-  max-height: 100vh;
-  overflow: hidden;
+* {
+margin: 0;
 }
 
+body {
+  display: flex;
+  justify-content: space-between;
+}
+
+
 header {
+  position: fixed;
+  top: 0;
+  left: 10%;
+  right: 0;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
-  padding: 0 15px;
-  background-color: #252525;
-  color: #f5f5f5;
+  padding-right: 20px;
 }
 
-header > div {
+header ul {
   display: flex;
-  justify-content: space-evenly;
+  align-items: last baseline;
+  list-style: none;
+  gap: 100px;
+  height: 100%;
+}
+
+header ul > li {
+  font-size: 1.8em;
+  color: aliceblue;
+  opacity: .3;
+  cursor: pointer;
+  transition: 1s all;
+}
+
+header ul > li:hover {
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+header ul > li a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+header .login {
+  text-decoration: none;
+  color: red;
+  padding: 10px 40px;
+  background-color: aliceblue;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+.logo {
+  background-image: url('https://www.creativefabrica.com/wp-content/uploads/2023/03/29/Cocktail-logo-graphic-Graphics-65674730-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 60px;
+}
+
+.nav {
+  width: 5%;
+  height: 100vh;
+  background-color: #252525;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  width: 20%;
+  justify-content: space-between;
+}
+
+.nav-items {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: center;
+}
+
+.nav-items a {
+  color: whitesmoke;
 }
 
 .cart {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiKONRhX7SjSxc7Nrc6ZKPfMsHDCwZsPo7zw&usqp=CAU");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
   position: relative;
 }
 
-.cart span {
+.numOfItems {
   position: absolute;
-  left: 70%;
-  top: 0;
-  border: 1px solid #252525;
-  padding: 3px 5px;
-  background-color: #252525;
-  color: #f5f5f5;
-  border-radius: 60%;
+  bottom: -15px;
+  right: -10px;
+  background-color: red;
+  padding: 2px 7px;
+  border-radius: 50%;
 }
 
-header > ul {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 20%;
-  list-style: none;
-}
-
-body > section {
-  max-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-form {
-  height: 500px;
-  width: 500px;
-  position: absolute;
-  left: 30%;
-  top: 15%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  border-radius: 20px;
-  background-color: #252525;
-  color: whitesmoke;
-  box-shadow: 1px 1px 5px 1px #252525;
-}
-
-form input {
-  width: 50%;
-  height: 30px;
-  border: none;
-  border-bottom: 1px dotted whitesmoke;
-  background: transparent;
-  color: #f5f5f5;
-}
-
-form input::placeholder {
-  color: whitesmoke;
-}
-
-#signUp {
-  width: 65%;
-  height: 35px;
-  background-color: aqua;
-  border: none;
-}
-
-/* Hero Section background image */
-#welcome {
+.sections_container {
+  width: 95%;
   height: 100vh;
-  align-items: flex-start;
-  padding-left: 50px;
-  background-image: url("./images/COCKTAIL.jpeg");
+  overflow: hidden;
+}
+
+.sections_container section {
+  width: 100%;
+  height: 100%;
+}
+
+.welcome {
+  background-image: url('./images/bg.jpg');
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center right;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 40px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: antiquewhite;
 }
 
-#welcome {
-  font-size: 28px;
-  color: #f5f5f5;
+.welcome * {
+  margin: 5px;
 }
 
-#welcome h1,
-#welcome p {
-  margin: 3px;
+.welcome h1 {
+  font-size: 2em;
 }
 
-#welcome button {
+.welcome button {
   width: 150px;
   height: 40px;
+  border-radius: 20px;
+  background-color: azure;
+  color: #252525;
+  border: none;
+  font-size: .5em;
   margin-top: 20px;
-  font-size: 1rem;
-  border-radius: 1rem;
+  box-shadow: 1px 1px 5px 1px #252525;
+  line-height: 40px;
+  font-weight: 700;
+  cursor: pointer;
 }
-button:hover {
-  cursor: grab;
-  background-color: ;
+
+.welcome button:hover {
+  box-shadow: inset 1px 1px 5px 1px #252525, inset -1px 1px 5px -1px #252525;
 }
-barName {
-  font-size: 1rem;
+
+.welcome h1,
+.welcome p {
+  text-shadow: -5px -5px 5px  #252525;
 }
+
+/* LOGIN SECTION */
+.login_form {
+  background-image: linear-gradient(to bottom right,#252525,#ef88bb, #233a4e);
+  display: flex;
+  align-items: center;
+}
+
+.login_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  height: 70vh;
+  width: 100%;
+}
+
+.login_container-image {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  padding-left: 20px;
+  color: bisque;
+}
+
+.login_container-image h1 {
+  text-shadow: -5px -5px 3px  #252525;;
+}
+
+.login_container-form {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  color: aliceblue;
+}
+
+.login_container-form input {
+  width: 60%;
+  height: 40px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px dotted whitesmoke;
+  color: whitesmoke;
+}
+
+::placeholder {
+  color: whitesmoke;
+}
+
+.login_container-form button {
+  padding: 3px 60px;
+  line-height: 40px;
+  background-color: aliceblue;
+  color: #252525;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  box-shadow: 1px 1px 10px 1px black;
+}
+
+/* END OF LOGIN SECTION */
