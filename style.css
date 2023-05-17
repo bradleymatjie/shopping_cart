@@ -7,7 +7,6 @@ body {
   justify-content: space-between;
 }
 
-
 header {
   position: fixed;
   top: 0;
@@ -96,7 +95,7 @@ header .login {
   bottom: -15px;
   right: -10px;
   background-color: red;
-  padding: 2px 7px;
+  padding: 2px 10px;
   border-radius: 50%;
 }
 
@@ -128,6 +127,7 @@ header .login {
 
 .welcome * {
   margin: 5px;
+  transform: skewX(20deg);
 }
 
 .welcome h1 {
