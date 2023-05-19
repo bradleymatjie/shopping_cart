@@ -240,6 +240,7 @@ header .login {
   display: flex;
   align-items: center;
   gap: 30px;
+  padding-left: 20px; 
 }
 
 .product {
@@ -287,4 +288,15 @@ header .login {
   line-height: 40px;
   background-color: yellowgreen;
   border: none;
+}
+
+.arrows {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  width: 120px;
+  height: 50px;
+  background-color: black;
+  display: flex;
+  align-items: center;
 }
