@@ -18,7 +18,7 @@ let products = [
 
 
 products.map(product => {
-  let code = `<div class="product">
+  let item = `<div class="product">
     <img src=${product.img} id="img" alt="product img">
     <div>
     <h2 id="name" class="product-name">${product.name}</h2>
@@ -31,6 +31,6 @@ products.map(product => {
     </div>
     </div>
     </div>`;
-  
-    document.querySelector(".products-container").innerHTML = (code);
+
+    document.querySelector(".products-container").innerHTML += item;
 })
