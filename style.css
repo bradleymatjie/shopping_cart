@@ -232,19 +232,42 @@ header .login {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .products-container {
-  width: 100%;
+  max-width: 100%;
   height: 70vh;
   display: flex;
   align-items: center;
   gap: 30px;
-  padding-left: 20px; 
+  padding: 0 50px;
+  overflow-x: scroll; 
+}
+
+/* width */
+.products-container::-webkit-scrollbar {
+  height: 5px;
+}
+
+/* Track */
+.products-container::-webkit-scrollbar-track {
+  background: whitesmoke;
+  box-shadow: 1px 1px 5px 1px white;
+}
+
+/* Handle */
+.products-container::-webkit-scrollbar-thumb {
+  background: #252525;
+}
+
+/* Handle on hover */
+.products-container::-webkit-scrollbar-thumb:hover {
+  background: red;
 }
 
 .product {
-  width: 350px;
+  min-width: 350px;
   height: 450px;
   padding: 10px;
   box-shadow: 1px 1px 5px 1px #252525;
