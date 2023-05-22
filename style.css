@@ -18,6 +18,7 @@ header {
   align-items: center;
   padding-right: 20px;
   background-color: aliceblue;
+  z-index: 10;
 }
 
 header ul {
@@ -313,13 +314,93 @@ header .login {
   border: none;
 }
 
-.arrows {
-  position: absolute;
-  right: 0;
-  bottom: 10px;
-  width: 120px;
-  height: 50px;
-  background-color: black;
+/* SHOPPING CART */
+
+.shopping_cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.shopping_cart h1 {
+  padding-top: 50px;
+  padding-left: 20px;
+}
+
+
+.shopping_cart p {
+  padding-left: 20px;
+}
+
+.cart-container {
+  height: 70vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 30px;
+  gap: 40px;
+  overflow-y: scroll;
+}
+
+
+/* width */
+.cart-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.cart-container::-webkit-scrollbar-track {
+  background: grey;
+  box-shadow: 1px 1px 5px 1px white;
+}
+
+/* Handle */
+.cart-container::-webkit-scrollbar-thumb {
+  background: #252525;
+}
+
+/* Handle on hover */
+.cart-container::-webkit-scrollbar-thumb:hover {
+  background: #252525;
+}
+
+.cart-item {
+  width: 90%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 5px 1px #252525;
+}
+
+.cart-item img {
+  width: 40%;
+  height: 200px;
+}
+
+.remove-button {
+  height: 200px;
+  width: 10%;
+  background-color: #252525;
   display: flex;
   align-items: center;
+  justify-content: center;
+  color: red;
+}
+
+.checkout {
+  width: 170px;
+  height: 50px;
+  border: none;
+  background-color: aquamarine;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  transition: 1s all;
+}
+
+.checkout:hover {
+  background-color: green;
 }
