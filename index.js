@@ -46,7 +46,13 @@ numOfItems.innerHTML = selectedProducts.length;
 // Function to add a product to the cart
 function addToCart(product) {
   selectedProducts.push(product);
-  console.log("Selected Products:", selectedProducts);
+  updateCart();
+  numOfItems.innerHTML = selectedProducts.length;
+}
+
+// remove items from Cart
+function removeFromCart(productId) {
+  selectedProducts = selectedProducts.filter(product => product.id !== productId);
   updateCart();
   numOfItems.innerHTML = selectedProducts.length;
 }
@@ -69,7 +75,7 @@ function updateCart() {
           <label for="numofItem">Quantity</label>
           <input type="number" name="numofItem" id="quantity">
         </div>
-        <div class="remove-button">
+        <div class="remove-button" onclick="removeFromCart('${item.id}')">
           Remove
         </div>
       </div>`;

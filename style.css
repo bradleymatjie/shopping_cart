@@ -388,6 +388,7 @@ header .login {
   align-items: center;
   justify-content: center;
   color: red;
+  cursor: pointer;
 }
 
 .checkout {
