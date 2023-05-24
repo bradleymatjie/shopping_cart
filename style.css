@@ -83,7 +83,7 @@ header .login {
 }
 
 .nav-items a {
-  color: whitesmoke;
+  color: black;
 }
 
 .cart {
@@ -111,27 +111,30 @@ header .login {
 }
 
 .welcome {
-  background-image: url('./images/bg.jpg');
+  background-image: url('./images/pexels-𝘽𝙡𝙪𝙚-𝘼𝙧𝙖𝙪𝙯-16806422.jpg');
   background-repeat: no-repeat;
   background-position: center right;
-  background-size: cover;
+  background-size:cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-left: 40px;
-  font-size: 2rem;
+  padding-left: 30px;
+  padding-top: 18rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  color: antiquewhite;
+  color: #fff;
+  
+
 }
 
 .welcome * {
   margin: 5px;
-  transform: skewX(20deg);
+  
 }
 
 .welcome h1 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .welcome button {
@@ -163,6 +166,14 @@ header .login {
   background-image: linear-gradient(to bottom right,#252525,#ef88bb, #233a4e);
   display: flex;
   align-items: center;
+  
+}
+
+.slogan {
+  font-size: 1.7rem;
+  color: aliceblue;
+  font-style: normal; 
+  box-shadow:#fff;
 }
 
 .login_container {
