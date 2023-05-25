@@ -161,6 +161,14 @@ header .login {
 .welcome h1,
 .welcome p {
   text-shadow: -5px -5px 5px  #252525;
+  margin-top: 2rem;
+  
+  
+}
+.orderbutton:hover {
+color:#fff;
+background-color: #252525;
+cursor:default
 }
 
 /* LOGIN SECTION */
@@ -172,10 +180,11 @@ header .login {
 }
 
 .slogan {
-  font-size: 1.7rem;
+  font-size: 0.5rem;
   color: aliceblue;
-  font-style: normal; 
+  
   box-shadow:#fff;
+  margin-right: 20rem;
 }
 
 .login_container {
@@ -275,7 +284,7 @@ header .login {
 
 /* Handle on hover */
 .products-container::-webkit-scrollbar-thumb:hover {
-  background: red;
+  background:#252525;
 }
 
 .product {
@@ -321,8 +330,9 @@ header .login {
   width: 100%;
   height: 40px;
   line-height: 40px;
-  background-color: yellowgreen;
+  background-color: #252525;
   border: none;
+  color: #fff;
 }
 
 /* SHOPPING CART */

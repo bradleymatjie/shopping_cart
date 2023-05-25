@@ -2,40 +2,51 @@
 let products = [
   {
     id: 'js101d',
-    name: 'Good old C++',
+    name: 'Mongo jito',
     Ingredients: 'white rum, sugar, lime juice, soda water and mint.',
-    img: './images/c++.jpg',
-    price: 87.50
+    img: './images/pexels-denys-gromov-12419165.jpg',
+    price: 100
   },
   {
     id: 'js203d',
-    name: 'JS On The Rocks',
-    Ingredients: 'tequila, lime and sugar',
-    img: './images/js.jpg',
-    price: 73.20
+    name: 'Try Catch Danger',
+    Ingredients: 'tequila, strawberries and sugar',
+    img: './images/pexels-denys-gromov-8375239.jpg',
+    price: 180
   },
   {
     id: 'js306d',
-    name: 'Soft Function',
-    Ingredients: 'tequila, Lemon, Seasonal Tea',
-    img: './images/function.jpg',
-    price: 64.87
+    name: 'Binary & Tonic',
+    Ingredients: 'tequila, Grapes, gin',
+    img: './images/pexels-timur-weber-8679593.jpg',
+    price: 250
   },
   {
     id: 'js404d',
     name: '404 Aftermath',
-    Ingredients: 'Tangueray Gin, Proscecco, Lemon, Seasonal Tea',
+    Ingredients: 'Tangueray Gin, Proscecco, Lemon',
     img: './images/404.jpg',
-    price: 91.90
+    price: 120
   },
   {
     id: 'js503d',
     name: 'Syntax Error',
-    Ingredients: 'tequila, lime sugar, Prescocco, sugar',
-    img: './images/yellow-cocktail.webp',
-    price: 95.50
-  }
+    Ingredients: 'tequila, lime sugar, Prescocco',
+    img: './images/pexels-𝘽𝙡𝙪𝙚-𝘼𝙧𝙖𝙪𝙯-16806422.jpg',
+    price: 550
+  },
+  {
+    id: 'js404d',
+    name: 'Soft Function',
+    Ingredients: 'Tangueray Gin, Proscecco, Lemon',
+    img: './images/',
+    price: 300
+  },
 ];
+
+
+
+
 
 // Shopping Cart
 let numOfItems = document.getElementById("numOfItems");
