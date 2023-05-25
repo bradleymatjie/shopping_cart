@@ -44,10 +44,6 @@ let products = [
   },
 ];
 
-
-
-
-
 // Shopping Cart
 let numOfItems = document.getElementById("numOfItems");
 let selectedProducts = [];
@@ -69,6 +65,8 @@ function removeFromCart(productId) {
 }
 
 // Function to update the cart display
+// ...
+
 function updateCart() {
   let cartContainer = document.querySelector(".cart-container");
   cartContainer.innerHTML = "";
@@ -78,13 +76,14 @@ function updateCart() {
       <div class="cart-item">
         <img src=${item.img} alt="cart item">
         <div>
-          <h2 class="price">${item.price}</h2>
+          <h2 class="price">R${item.price}</h2>
           <h3 class="name">${item.name}</h3>
           <p class="ingredients">${item.Ingredients}</p>
         </div>
         <div class="quantity">
-          <label for="numofItem">Quantity</label>
-          <input type="number" name="numofItem" id="quantity">
+          <span class="subtract" id="sub">-</span>
+          <h2>0</h2>
+          <span class="add" id="add">+</span>
         </div>
         <div class="remove-button" onclick="removeFromCart('${item.id}')">
           Remove
@@ -92,8 +91,11 @@ function updateCart() {
       </div>`;
 
     cartContainer.innerHTML += cartItem;
+    
+  calculateSubtotal();
   });
 }
+
 
 // DISPLAYING THE PRODUCTS IN THE BROWSER
 products.map(product => {
@@ -105,7 +107,6 @@ products.map(product => {
         <h3 class="product-ingredients">${product.Ingredients}</h3>
         <div class="product-pricing">
           <p class="product-price" id="price">R${product.price}</p>
-          <p class="product-id">Product Id: ${product.id}</p>
         </div>
         <button class="product-toCart">Add to cart</button>
       </div>
@@ -121,3 +122,13 @@ addToCartButtons.forEach((button, index) => {
     addToCart(products[index]);
   });
 });
+
+
+function calculateSubtotal() {
+  let subtotal = selectedProducts.reduce((total, product) => {
+    return total + product.price;
+  }, 0);
+
+  let subtotalElement = document.getElementById("subtotal");
+  subtotalElement.innerHTML = `R${subtotal}`;
+}
