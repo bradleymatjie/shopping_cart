@@ -3,7 +3,7 @@ let products = [
   {
     id: 'js101d',
     name: 'Mongo jito',
-    Ingredients: 'white rum, sugar, lime juice, soda water and mint.',
+    Ingredients: 'white rum, soda water and mint.',
     img: './images/pexels-denys-gromov-12419165.jpg',
     price: 100
   },
@@ -38,9 +38,23 @@ let products = [
   {
     id: 'js404d',
     name: 'Soft Function',
+    Ingredients: 'Tangueray Gin, Proscecco, Peach',
+    img: './images/pexels-arina-krasnikova-7377107.jpg',
+    price: 350
+  },
+  {
+    id: 'js404d',
+    name: 'Camel case Coldbrew',
     Ingredients: 'Tangueray Gin, Proscecco, Lemon',
-    img: './images/',
-    price: 300
+    img: './images/pexels-denys-gromov-8375105.jpg',
+    price: 450
+  },
+  {
+    id: 'js404d',
+    name: 'MEAN Margarita',
+    Ingredients: 'Vodka, Ice, Tequila',
+    img: './images/pexels-kim-van-vuuren-1590154.jpg',
+    price: 900
   },
 ];
 
