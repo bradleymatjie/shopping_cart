@@ -82,7 +82,7 @@ function updateCart() {
         </div>
         <div class="quantity">
           <span class="subtract" id="sub">-</span>
-          <h2>0</h2>
+          <h2 id="totprice">1</h2>
           <span class="add" id="add">+</span>
         </div>
         <div class="remove-button" onclick="removeFromCart('${item.id}')">
@@ -132,3 +132,4 @@ function calculateSubtotal() {
   let subtotalElement = document.getElementById("subtotal");
   subtotalElement.innerHTML = `R${subtotal}`;
 }
+
