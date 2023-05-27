@@ -40,6 +40,8 @@ header ul > li {
 header ul > li:hover {
   opacity: 1;
   transform: scale(1.3);
+  
+  
 }
 
 header ul > li a {
@@ -54,6 +56,28 @@ header .login {
   background-color: #252525;
   border-radius: 20px;
   font-weight: 700;
+}
+.login:hover {
+color: whitesmoke;
+background-color: #825F30;
+cursor: grab;
+}
+.javascriptBarName {
+  color: black;
+  font-weight: 700;
+  font-family: 'Bonheur Royale', cursive;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  
+}
+.pickYourDrink {
+  margin-top: 3rem;
+}
+.menu {
+  text-align: center;
+  margin-top: 0.1rem;
+  margin-left: -15rem;
+  
 }
 
 .logo {
@@ -82,6 +106,7 @@ header .login {
   flex-direction: column;
   gap: 35px;
   align-items: center;
+  
 }
 
 .nav-items a {
@@ -173,16 +198,16 @@ cursor:default
 
 /* LOGIN SECTION */
 .login_form {
-  background-image: linear-gradient(to bottom right,#252525,#ef88bb, #233a4e);
+  background: linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%);;
   display: flex;
   align-items: center;
+  
   
 }
 
 .slogan {
   font-size: 0.5rem;
   color: aliceblue;
-  
   box-shadow:#fff;
   margin-right: 20rem;
 }
@@ -203,11 +228,14 @@ cursor:default
   align-items: center;
   font-size: 2em;
   padding-left: 20px;
-  color: bisque;
+  color: #fff;
 }
 
 .login_container-image h1 {
   text-shadow: -5px -5px 3px  #252525;;
+}
+.mission {
+   font-family: 'Calligraffitti', cursive;
 }
 
 .login_container-form {
@@ -242,7 +270,7 @@ cursor:default
   font-size: 1.1rem;
   font-weight: 700;
   border: none;
-  box-shadow: 1px 1px 10px 1px black;
+  box-shadow: 1px 1px 1px 1px black;
 }
 
 /* END OF LOGIN SECTION */
@@ -425,4 +453,14 @@ cursor:default
 
 .checkout:hover {
   background-color: green;
+}
+
+/* //About Us section  */
+.aboutUsSection {
+  display: block;
+  margin: auto;
+  margin-top: 4rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+
 }
