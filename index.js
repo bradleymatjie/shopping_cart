@@ -5,6 +5,7 @@ let products = [
     name: 'Mongo jito',
     Ingredients: 'white rum, sugar, lime juice, soda water and mint.',
     img: './images/pexels-denys-gromov-12419165.jpg',
+    quantity: 1,
     price: 100
   },
   {
@@ -12,6 +13,7 @@ let products = [
     name: 'Try Catch Danger',
     Ingredients: 'tequila, strawberries and sugar',
     img: './images/pexels-denys-gromov-8375239.jpg',
+    quantity: 1,
     price: 180
   },
   {
@@ -19,6 +21,7 @@ let products = [
     name: 'Binary & Tonic',
     Ingredients: 'tequila, Grapes, gin',
     img: './images/pexels-timur-weber-8679593.jpg',
+    quantity: 1,
     price: 250
   },
   {
@@ -26,6 +29,7 @@ let products = [
     name: '404 Aftermath',
     Ingredients: 'Tangueray Gin, Proscecco, Lemon',
     img: './images/404.jpg',
+    quantity: 1,
     price: 120
   },
   {
@@ -33,13 +37,15 @@ let products = [
     name: 'Syntax Error',
     Ingredients: 'tequila, lime sugar, Prescocco',
     img: './images/pexels-𝘽𝙡𝙪𝙚-𝘼𝙧𝙖𝙪𝙯-16806422.jpg',
-    price: 550
+    quantity: 1,
+    price: 150
   },
   {
     id: 'js404d',
     name: 'Soft Function',
     Ingredients: 'Tangueray Gin, Proscecco, Lemon',
     img: './images/',
+    quantity: 1,
     price: 300
   },
 ];
@@ -64,6 +70,21 @@ function removeFromCart(productId) {
   numOfItems.innerHTML = selectedProducts.length;
 }
 
+function increment(productId) {
+  const product = selectedProducts.find(item => item.id == productId);
+  product.quantity++;
+  console.log(selectedProducts);
+  updateCart();
+}
+
+function decrement(productId) {
+  const product = selectedProducts.find(item => item.id == productId);
+  console.log(selectedProducts);
+  if (product.quantity > 1) {
+    product.quantity--;
+    updateCart();
+  }
+}
 // Function to update the cart display
 // ...
 
@@ -81,9 +102,9 @@ function updateCart() {
           <p class="ingredients">${item.Ingredients}</p>
         </div>
         <div class="quantity">
-          <span class="subtract" id="sub">-</span>
-          <h2 id="totprice">1</h2>
-          <span class="add" id="add">+</span>
+          <span class="subtract" onclick="decrement('${item.id}')">-</span>
+          <h2 id="totprice">${item.quantity}</h2>
+          <span class="add" onclick="increment('${item.id}')">+</span>
         </div>
         <div class="remove-button" onclick="removeFromCart('${item.id}')">
           Remove
@@ -91,8 +112,7 @@ function updateCart() {
       </div>`;
 
     cartContainer.innerHTML += cartItem;
-    
-  calculateSubtotal();
+    calculateSubtotal();
   });
 }
 
@@ -133,3 +153,10 @@ function calculateSubtotal() {
   subtotalElement.innerHTML = `R${subtotal}`;
 }
 
+const form = document.querySelector(".login_container-form");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const user = document.getElementById("username").value;
+  document.querySelector(".login").innerHTML = user;
+})
