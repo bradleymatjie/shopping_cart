@@ -3,11 +3,11 @@ let products = [
   {
     id: 'js101d',
     name: 'Mongo jito',
-    Ingredients: 'white rum, sugar, lime juice, soda water and mint.',
+    Ingredients: 'white rum, soda water and mint.',
     img: './images/pexels-denys-gromov-12419165.jpg',
     quantity: 1,
     price: 100
-  },
+    },
   {
     id: 'js203d',
     name: 'Try Catch Danger',
@@ -23,6 +23,7 @@ let products = [
     img: './images/pexels-timur-weber-8679593.jpg',
     quantity: 1,
     price: 250
+
   },
   {
     id: 'js404d',
@@ -33,20 +34,68 @@ let products = [
     price: 120
   },
   {
+    id: 'js306d',
+    name: 'Python tonic',
+    Ingredients: 'gin, tonic and cranberry',
+    img: './images/COCKTAIL.jpeg',
+    quantity: 1,
+    price: 9500
+  },
+  {
+    id: 'js306d',
+    name: 'Binary & Tonic',
+    Ingredients: 'tequila, Grapes, gin',
+    img: './images/pexels-timur-weber-8679593.jpg',
+    quantity: 1,
+    price: 2500
+  },
+  {
     id: 'js503d',
     name: 'Syntax Error',
     Ingredients: 'tequila, lime sugar, Prescocco',
     img: './images/pexels-𝘽𝙡𝙪𝙚-𝘼𝙧𝙖𝙪𝙯-16806422.jpg',
     quantity: 1,
-    price: 150
+    price: 5500
   },
   {
     id: 'js404d',
     name: 'Soft Function',
-    Ingredients: 'Tangueray Gin, Proscecco, Lemon',
-    img: './images/',
+    Ingredients: 'Tangueray Gin, Proscecco, Peach',
+    img: './images/pexels-arina-krasnikova-7377107.jpg',
     quantity: 1,
-    price: 300
+    price: 350
+  },
+  {
+    id: 'js404d',
+    name: 'Camel case Coldbrew',
+    Ingredients: 'Tangueray Gin, Proscecco, Lemon',
+    img: './images/pexels-denys-gromov-8375105.jpg',
+    quantity: 1,
+    price: 450
+  },
+  {
+    id: 'js404d',
+    name: 'MEAN Margarita',
+    Ingredients: 'Vodka, Ice, Tequila',
+    img: './images/pexels-kim-van-vuuren-1590154.jpg',
+    quantity: 1,
+    price: 190
+  },
+  {
+    id: 'js404d',
+    name: 'Ruby On Railz',
+    Ingredients: 'Vodka, Strawberry and Tequila',
+    img: './images/pexels-jacob-thomas-6060953.jpg',
+    quantity: 1,
+    price: 150
+  },
+  {
+    id: 'js404d',
+    name: 'Back-end Drama',
+    Ingredients: 'Vodka, Strawberry and Tequila',
+    img: './images/pexels-roman-odintsov-6422054.jpg',
+    quantity: 1,
+    price: 159
   },
 ];
 
