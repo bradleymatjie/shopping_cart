@@ -6,7 +6,7 @@ let products = [
     Ingredients: 'white rum, soda water and mint.',
     img: './images/pexels-denys-gromov-12419165.jpg',
     quantity: 1,
-    price: 100
+    price: 1000
     },
   {
     id: 'js203d',
@@ -14,7 +14,7 @@ let products = [
     Ingredients: 'tequila, strawberries and sugar',
     img: './images/pexels-denys-gromov-8375239.jpg',
     quantity: 1,
-    price: 180
+    price: 1800
   },
   {
     id: 'js306d',
@@ -22,7 +22,7 @@ let products = [
     Ingredients: 'tequila, Grapes, gin',
     img: './images/pexels-timur-weber-8679593.jpg',
     quantity: 1,
-    price: 250
+    price: 2500
 
   },
   {
@@ -31,7 +31,7 @@ let products = [
     Ingredients: 'Tangueray Gin, Proscecco, Lemon',
     img: './images/404.jpg',
     quantity: 1,
-    price: 120
+    price: 1200
   },
   {
     id: 'js306d',
@@ -63,7 +63,7 @@ let products = [
     Ingredients: 'Tangueray Gin, Proscecco, Peach',
     img: './images/pexels-arina-krasnikova-7377107.jpg',
     quantity: 1,
-    price: 350
+    price: 3500
   },
   {
     id: 'js404d',
@@ -71,7 +71,7 @@ let products = [
     Ingredients: 'Tangueray Gin, Proscecco, Lemon',
     img: './images/pexels-denys-gromov-8375105.jpg',
     quantity: 1,
-    price: 450
+    price: 4500
   },
   {
     id: 'js404d',
@@ -79,7 +79,7 @@ let products = [
     Ingredients: 'Vodka, Ice, Tequila',
     img: './images/pexels-kim-van-vuuren-1590154.jpg',
     quantity: 1,
-    price: 190
+    price: 1900
   },
   {
     id: 'js404d',
@@ -87,7 +87,7 @@ let products = [
     Ingredients: 'Vodka, Strawberry and Tequila',
     img: './images/pexels-jacob-thomas-6060953.jpg',
     quantity: 1,
-    price: 150
+    price: 1500
   },
   {
     id: 'js404d',
@@ -95,7 +95,7 @@ let products = [
     Ingredients: 'Vodka, Strawberry and Tequila',
     img: './images/pexels-roman-odintsov-6422054.jpg',
     quantity: 1,
-    price: 159
+    price: 1590
   },
 ];
 
