@@ -141,12 +141,18 @@ function updateCart() {
   let cartContainer = document.querySelector(".cart-container");
   cartContainer.innerHTML = "";
 
+  let subtotal = 0; // Initialize subtotal
+
   selectedProducts.map(item => {
+    // Multiply price by quantity
+    let totalPrice = item.price * item.quantity;
+    subtotal += totalPrice; // Add totalPrice to the subtotal
+
     let cartItem = `
       <div class="cart-item">
         <img src=${item.img} alt="cart item">
         <div>
-          <h2 class="price">R${item.price}</h2>
+          <h2 class="price">R${totalPrice}</h2>
           <h3 class="name">${item.name}</h3>
           <p class="ingredients">${item.Ingredients}</p>
         </div>
@@ -161,9 +167,15 @@ function updateCart() {
       </div>`;
 
     cartContainer.innerHTML += cartItem;
-    calculateSubtotal();
   });
+
+  // Update subtotal
+  let subtotalElement = document.getElementById("subtotal");
+  subtotalElement.innerHTML = `R${subtotal}`;
+
 }
+
+
 
 
 // DISPLAYING THE PRODUCTS IN THE BROWSER
