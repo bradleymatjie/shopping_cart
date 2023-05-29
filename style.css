@@ -138,7 +138,7 @@ cursor: grab;
 }
 
 .welcome {
-  background-image: url('./images/pexels-𝘽𝙡𝙪𝙚-𝘼𝙧𝙖𝙪𝙯-16806422.jpg');
+  background-image: url('./images/pexels-denys-gromov-8375105.jpg');
   background-repeat: no-repeat;
   background-position: center right;
   background-size:cover;
@@ -147,12 +147,12 @@ cursor: grab;
   justify-content: center;
   align-items: flex-start;
   padding-left: 30px;
-  padding-top: 18rem;
+  padding-top: 80rem;
   font-size: 2.5rem;
   font-weight: 700;
   color: #fff;
+  max-width: 100%
   
-
 }
 
 .welcome * {
@@ -463,4 +463,53 @@ cursor:default
   margin-left: 10rem;
   margin-right: 10rem;
 
+}
+h1 {
+  text-align: center;
+}
+video {
+  display: block;
+  margin: auto;
+}
+h6 {
+  text-align: justify;
+  line-height: 2.5rem;
+
+}
+
+/* Contact Us Section  */
+.contactHeading {
+  margin-top: 4rem;
+}
+.aesthetic {
+  position: relative;
+  top: 5rem;
+  left: 12rem;
+}
+.form {
+  position: relative;
+  top: -20rem;
+  left: 40rem;
+  color: #252525;
+  
+}
+.inputs {
+  padding:1rem;
+  margin: 1rem;
+  width: 10rem;
+}
+.contactButton {
+  margin-left: 1rem;
+  border-radius: 1.5rem;
+  background-color: black;
+  color: #fff;
+  padding: 0.5rem 3rem;
+}
+.contactButton:hover {
+   background-color: #825F30;
+   color: white;
+
+}
+#userinput {
+  margin-left: 2.9rem; 
 }

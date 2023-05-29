@@ -23,7 +23,7 @@ let products = [
   },
   {
     id: 'js306d',
-    name: 'Python tonic',
+    name: 'Algo on the beach',
     Ingredients: 'gin, tonic and cranberry',
     img: './images/COCKTAIL.jpeg',
     price: 9500
@@ -63,6 +63,14 @@ let products = [
     img: './images/pexels-kim-van-vuuren-1590154.jpg',
     price: 9000
   },
+
+  {
+    id: 'js404d',
+    name: 'Git innit+',
+    Ingredients: 'Vodka, Ice, Tequila',
+    img: './images/pexels-ricardo-oliveira-13952582.jpg',
+    price: 9000
+  },
   {
     id: 'js404d',
     name: 'Ruby On Railz',
@@ -72,14 +80,20 @@ let products = [
   },
   {
     id: 'js404d',
+    name: 'Fire Wall Fizz',
+    Ingredients: 'Vodka, Tonic water',
+    img: './images/pexels-arina-krasnikova-7377025.jpg',
+    price: 1500
+  },
+  {
+    id: 'js404d',
     name: 'Back-end Drama',
     Ingredients: 'Vodka, Strawberry and Tequila',
     img: './images/pexels-roman-odintsov-6422054.jpg',
     price: 1500
   },
+  
 ];
-
-
 
 
 
