@@ -16,12 +16,12 @@ Project is created with:
 Clone the project
 
 ``` bash
-  git clone https://github.com/bradleymatjie/Shopping_calculator.git
+  git clone https://github.com/bradleymatjie/Shopping_cart.git
 
 # Go to the project directory
 
 ``` bash
-  cd simple_calculator
+  cd Shopping_cart
 
 # Running the project
 
