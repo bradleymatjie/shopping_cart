@@ -18,9 +18,9 @@ let products = [
   },
   {
     id: 'js306d',
-    name: 'Binary & Tonic',
+    name: 'Binary Bubbly',
     Ingredients: 'tequila, Grapes, gin',
-    img: './images/pexels-timur-weber-8679593.jpg',
+    img: './images/pexels-kristina-paukshtite-1280364.jpg',
     quantity: 1,
     price: 2500
 

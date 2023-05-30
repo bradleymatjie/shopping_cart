@@ -24,8 +24,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
     
     <!-- Linking Javscript -->
-    
     <script src="./index.js" defer async></script>
+    <!-- Font Awesome  -->
+    <script src="https://kit.fontawesome.com/d1e74ba97d.js" crossorigin="anonymous"></script>
   </head>
 
   <header>
@@ -82,22 +83,79 @@
       </section>
       <!-- EndOf Shopping items section -->
 
-      <!-- Start of About section -->
-      <section class="about" id="about">
+ <!-- Start of About section -->
+ <section class="about" id="about">
+  <br>
+  <br>
+  <div class="aboutUsSection">
+    <h1 style="text-align: center;"> Who is JavaScript Bar ? </h1>
+    <p>
+      <h6>
+        Welcome to JavaScript Bar, where every cocktail is coded with love, and every order is an open-source for joy. 
         <br>
+        We are a unique blend of digital innovation and timeless cocktail culture, served up in an unforgettable eCommerce experience. 
         <br>
-        <div class="aboutUsSection">
-          <h1> Who is JavaScript Bar ? </h1>
-          <p>
-            <br>
-            <video src="images/pexels-george-morina-5821366-1920x1080-30fps.mp4" width="900" height="500" controls></video>
-          </p>
+        Built by an elite team of developers passionate about shaking up the eCommerce landscape, 
+        <br>
+        Our JavaScript Cocktail Bar was conceived at the pinnacle of the Melsoft Academy Bootcamp program.
+        <br>
+        Our mission is to offer an immersive journey through the delightful world of cocktails, 
+        <br>
+        where each drink tells a story of computer science concepts.
+        <br>
+        From sipping on a refreshing "Algorithm on the Beach" to indulging in a tantalizing "Binary Bubbly," or feeling the heat with a "Firewall Fizz,"
+        <br>
+        you'll be exploring sophisticated flavors, while appreciating the subtle nerdy twists.
+        <br>
+        We invite you to browse, enjoy, and shop with us. Raise your glasses, and let's toast to the delightful confluence of code and cocktails. Here's to a spirited eCommerce experience!
+      </h6>
+      <br>
+      <video src="images/pexels-george-morina-5821366-1920x1080-30fps.mp4" width="1000" height="330" controls></video>
+    </p>
+  </div>
+  
+  <br>
+  
+</section>
+<!-- Endof About section -->
+
+<!-- Contact Us Section  -->
+<section class="contact" id ="contactus">
+  <br>
+  <div class="contactHeading">
+    <h1 style="text-align: center;"> <strong>Contact Us</strong></h1>
+    <div>
+      <img class="aesthetic" src="./images/pexels-𝘽𝙡𝙪𝙚-𝘼𝙧𝙖𝙪𝙯-16806422.jpg" width="400" alt="cocktail glass with a white drink">
+    </div>
+    <!-- Form on contact us page  -->
+    <div class="form1">
+      <form action="mailto:tjaynthako@gmail.com" method="POST">
+          <span class="inputs"><label for="fullname">Full name</label></span>
+          <span class="inputs" ><input type="text" name="fullname" id="fullname"></span>
+        <br>
+        
+        <span class="inputs" ><label for="lastName">Email </label></span>
+        <span class="inputs" id="userinput"><input type="text" name="email" id="email"></span>
+        <br>
+        
+        <div class="inputs">
+          <textarea name="message" id="messageBox" cols="67" rows="7" placeholder="Message goes here"></textarea>
+          <br>
         </div>
-        
-        <br>
-        
-      </section>
-      <!-- Endof About section -->
+
+        <button class="contactButton" type="submit">Contact us</button>
+        <!-- Social icons  -->
+        <span id="socials">
+        <span id="ig"> <a href="https://www.instagram.com/kol.izakhaya/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></i></span>
+        <span id="twitter"> <a href="https://kol-restaurant.co.za/kol-trilogy/"><i class="fa-brands fa-twitter fa-2xl"></i></a></span>
+        <span id="fb"> <a href="https://www.google.com/search?sxsrf=APwXEdfIQI_HeGSlsyX-Waq8jkpz5sftCg:1685425206843&q=kol+izakhaya+twitter&tbm=isch&source=univ&fir=1cMlS90GHgkyhM%252C10NmnQpb0ydpoM%252C_%253BabZjzAbiO1k2wM%252CkXe-irfjuEshVM%252C_%253BD2ODtSaR989ciM%252CaVG8Co3nhaLcHM%252C_%253B7F-I23DHTIBZwM%252CaVG8Co3nhaLcHM%252C_%253B6oevoXHBmmCvhM%252CaVG8Co3nhaLcHM%252C_%253B0dknmr6HChhD3M%252CADhIbRVqYD08AM%252C_%253BbEm-VQP5uB5o-M%252CeogGD1VB1yb_4M%252C_%253BtWSYOHTf5SK9oM%252CNZmKAh8XqigLpM%252C_%253B7rWESv28fS7rbM%252C5xo-hNLZOpkw3M%252C_%253B9jpKExslKYyPgM%252CyKHw9Gmlm9XLJM%252C_&usg=AI4_-kRfv_CvRkbyuhGAHOkgx2j6WA0pmw&sa=X&ved=2ahUKEwiUi_-Vqpz_AhVXTEEAHTu4BkwQjJkEegQIMxAC&biw=1536&bih=722&dpr=1.25"><i class="fa-brands fa-facebook fa-2xl"></i></a></span>
+        <span id="linkedin"> <a href="https://www.wantedonline.co.za/food-and-drink/2021-09-03-the-hot-seat-kl-izakhaya/"><i class="fa-brands fa-linkedin fa-2xl"></i></a></span>
+        </span>
+
+    </div>
+  </div>
+  
+</section>
 
       <!-- Start of items in Shopping cart -->
       <section class="shopping_cart" id="shopping_cart">
@@ -113,20 +171,20 @@
       </section>
       <!-- Endof Shopping Cart Items -->
     
-      <section class="login_form" id="login">
-        <div class="login_container">
-          <div class="login_container-image">
-            <h1>GET UP TO 30% OFF YOUR FIRST PURCHASE</h1>
-          </div>
-          <form class="login_container-form">
-            <h1>Log In To Your Account</h1>
-              <input type="text" placeholder="Username" id="username" required>
-              <input type="email" placeholder="Email" required>
-              <input type="password" placeholder="Password" required>
-              <button type="submit">Login</button>
+      <!-- <section class="login_form" id="login"> -->
+        <!-- <div class="login_container"> -->
+          <!-- <div class="login_container-image"> -->
+            <!-- <h1>GET UP TO 30% OFF YOUR FIRST PURCHASE</h1> -->
+          <!-- </div> -->
+          <!-- <form class="login_container-form"> -->
+            <!-- <h1>Log In To Your Account</h1> -->
+              <!-- <input type="text" placeholder="Username" id="username" required> -->
+              <!-- <input type="email" placeholder="Email" required> -->
+              <!-- <input type="password" placeholder="Password" required> -->
+              <!-- <button type="submit">Login</button> -->
           </form>
         </div>
-      </section>
+      </section> 
     </div>
   </body>
 </html>
